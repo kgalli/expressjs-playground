@@ -1,0 +1,51 @@
+{
+  "400": {
+    "status": 400,
+    "name": "BadRequestAPIException",
+    "code": "request.incorrect",
+    "title": "Bad Request",
+    "message": "The request is malformed"
+  },
+  "401": {
+    "status": 401,
+    "name": "UnauthorizedAPIException",
+    "code": "auth.credentials_incorrect",
+    "title": "Request Unauthorized",
+    "message": "The request is not authorized or the authentication token is missing"
+  },
+  "404": {
+    "status": 404,
+    "name": "NotFoundAPIException",
+    "code": "resource.not_found",
+    "title": "Resource Not Found",
+    "message": "The requested resource(s) could not be found"
+  },
+  "422": {
+    "status": 422,
+    "name": "UnprocessableEntityAPIException",
+    "code": "request.invalid",
+    "title": "Unprocessable Entity",
+    "message": "The entity in the request body does not match expected schema"
+  },
+  "500": {
+    "status": 500,
+    "name": "InternalServerErrorAPIException",
+    "code": "server.internal_error",
+    "title": "Internal Server Error",
+    "message": "A server error has been encountered"
+  },
+  "501": {
+    "status": 501,
+    "name": "MethodNotImplementedAPIException",
+    "code": "request.method.not_implemented",
+    "title": "Method Not Implemented",
+    "message": "The request method is not yet implemented on this resource"
+  },
+  "502": {
+    "status": 502,
+    "name": "BadGatewayAPIException",
+    "code": "server.dependency_error.",
+    "title": "Failed Dependency",
+    "message": "The request could not be fulfilled due to problems with external service"
+  }
+}
