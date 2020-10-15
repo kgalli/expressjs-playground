@@ -1,4 +1,4 @@
-import express, {Application, RequestHandler, Router} from 'express';
+import express, { Application, RequestHandler, Router } from 'express';
 import defaultErrorHandler from './handlers/default-error-handler';
 import defaultLogger from '../lib/logger';
 import notFoundHandler from './handlers/not-found-handler';

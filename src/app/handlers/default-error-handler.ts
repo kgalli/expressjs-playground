@@ -13,6 +13,7 @@ interface ProblemResponse {
 
 export default function defaultErrorHandler(err: Error, req: Request,
   res: Response,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   next: NextFunction): void {
   let problemResponse: ProblemResponse = {
     status: 500,
