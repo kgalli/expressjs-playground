@@ -1,9 +1,9 @@
 import chai from 'chai';
 import request from 'supertest';
 
+import { NextFunction, Request, Response } from 'express';
 import createApp from '../../../src/app/app';
 import healthRouter from '../../../src/app/handlers/health-handler';
-import { NextFunction, Request, Response } from 'express';
 
 const { expect } = chai;
 const dummyLogger = (req: Request, res: Response, next: NextFunction) => { next(); };
