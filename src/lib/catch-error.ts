@@ -3,7 +3,8 @@ import {
 } from 'express';
 
 export default function catchError(routerFunction: RequestHandler): RequestHandler {
-  return function (req: Request, res: Response, next: NextFunction): Promise<any> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return function innerCatchError(req: Request, res: Response, next: NextFunction): Promise<any> {
     return routerFunction(req, res, next).catch(next);
   };
 }

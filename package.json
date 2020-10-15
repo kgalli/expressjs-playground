@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .ts --fix",
     "start": "node --inspect=5858 -r ts-node/register ./src/index.ts",
     "start:watch": "nodemon",
-    "test": "mocha -r ts-node/register test/**/*.test.ts"
+    "test": "mocha -r ts-node/register test/**/*.test.ts",
+    "posttest": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
